@@ -13,7 +13,7 @@ export class StudentsListComponent implements OnInit {
   students: MyStudent[];
   searchStr = '';
   initials = '';
-  categoryFilter = '';
+  searchType = '4';
 
 
   constructor(private FirstServiceService: FirstServiceService, private router: Router) {}

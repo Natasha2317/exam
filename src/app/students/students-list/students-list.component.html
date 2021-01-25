@@ -9,9 +9,12 @@
     <div class="col-2">
       <b>Сортировка по </b></div>
     <div class="col-4">
-      <select class="mt-3 mb-3 form-control">
-        <option value="IT">IT</option>
-        <option value="Design">Дизайн</option>
+      <select class="mt-3 mb-3 form-control" [(ngModel)]="searchType">
+        <option value="0">IT</option>
+        <option value="1">Дизайн</option>
+        <option value="2">История</option>
+        <option value="3">Юрисдикция</option>
+        <option value="4">Все</option>
       </select>
     </div>
   </div>
@@ -30,7 +33,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let student of students | myfilter: searchStr">
+      <tr *ngFor="let student of students | myfilter: searchStr | sort: searchType">
         <td scope="row">{{ student.id }}</td>
         <td>{{ student.surname }}</td>
         <td>{{ student.name[0]}}. {{student.patronymic[0]}}</td>
