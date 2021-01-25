@@ -1,0 +1,70 @@
+{
+  "students": [
+    {
+      "name": "Иван",
+      "surname": "Иванов",
+      "patronymic": "Иванович",
+      "phone": "+7 (987) 654-32-11",
+      "email": "ivan@mail.ru",
+      "birthday": "1998-09-21",
+      "group": "191-321",
+      "type": 1,
+      "id": 1
+    },
+    {
+      "name": "Петр",
+      "surname": "Петров",
+      "patronymic": "Петрович",
+      "phone": "+7 (987) 654-32-12",
+      "email": "petrov@mail.ru",
+      "birthday": "1987-05-12",
+      "group": "191-321",
+      "type": 1,
+      "id": 2
+    },
+    {
+      "name": "Василий",
+      "surname": "Васильев",
+      "patronymic": "Васильевич",
+      "phone": "+7 (987) 654-32-13",
+      "email": "vasok@mail.ru",
+      "birthday": "1982-12-24",
+      "group": "191-321",
+      "type": 3,
+      "id": 4
+    },
+    {
+      "name": "Семён",
+      "surname": "Семёнов",
+      "patronymic": "Семёнович",
+      "phone": "+7 (987) 654-32-14",
+      "email": "semen@mail.ru",
+      "birthday": "2000-02-25",
+      "group": "191-321",
+      "type": 3,
+      "id": 5
+    },
+    {
+      "name": "Сидор",
+      "surname": "Сидоров",
+      "patronymic": "Сидорович",
+      "phone": "+7 (987) 654-32-15",
+      "email": "sidorov@gmail.com",
+      "birthday": "1999-01-07",
+      "group": "191-321",
+      "type": 2,
+      "id": 7
+    },
+    {
+      "name": "Наталья",
+      "surname": "Павлова",
+      "patronymic": "Витальевна",
+      "phone": "+7 (895) 195-04-88",
+      "email": "nataashaa006@gmail.com",
+      "birthday": "2001-03-23",
+      "group": "191-321",
+      "type": 0,
+      "id": 8
+    }
+  ]
+}

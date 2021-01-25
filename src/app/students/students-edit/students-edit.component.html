@@ -1,0 +1,41 @@
+<div class="container-fluid">
+  <form [formGroup]="personForm">
+    <div class="form-group">
+      <label for="usersurname">Фамилия</label>
+      <input type="text" class="form-control" id="usersurname" placeholder="Фамилия" formControlName="surname" />
+    </div>
+    <div class="form-group">
+      <label for="username">Имя</label>
+      <input type="text" class="form-control" id="username" placeholder="Имя" formControlName="name" />
+    </div>
+    <div class="form-group">
+      <label for="userpatronymic">Отчество</label>
+      <input type="text" class="form-control" id="userpatronymic" placeholder="Отчество" formControlName="patronymic" />
+    </div>
+    <div class="form-group">
+      <label for="userphone">Телефон</label>
+      <input type="text" class="form-control" id="userphone" placeholder="Телефон" formControlName="phone"/>
+    </div>
+    <div class="form-group">
+      <label for="useremail">Email</label>
+      <input type="mail" class="form-control" id="useremail" placeholder="Email" formControlName="email" />
+    </div>
+    <div class="form-group">
+      <label for="userbirthday">Дата рождения</label>
+      <input type="date" class="form-control" id="userbirthday" placeholder="Дата рождения" formControlName="birthday" />
+    </div>
+    <div class="form-group">
+      <label for="userbirthday">Группа</label>
+      <input type="text" class="form-control" id="usergroup" placeholder="Группа" formControlName="group" />
+    </div>
+    <select class="mt-3 mb-3 custom-select" formControlName="type">
+      <option [ngValue]="myStudentType.IT">IT</option>
+      <option [ngValue]="myStudentType.design">Дизайн</option>
+      <option [ngValue]="myStudentType.history">История</option>
+      <option [ngValue]="myStudentType.lawyers">Юрисдикция</option>
+    </select>
+    <button class="btn btn-primary mr-4" [disabled]="personForm.invalid" (click)="onSave()">Сохранить</button>
+    <button class="btn btn-danger" *ngIf="id != null" (click)="onDelete()">Удалить</button>
+  </form>
+</div>
+
