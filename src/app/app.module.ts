@@ -9,11 +9,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MainComponent } from './main/main.component';
+import { GroupsPipe } from './shared/pipes/groups.pipe';
 ;
 // import { MomentModule } from 'angular2-moment';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, MainComponent],
+  declarations: [AppComponent, HeaderComponent, MainComponent, GroupsPipe],
   imports: [
     BrowserModule,
     FormsModule,

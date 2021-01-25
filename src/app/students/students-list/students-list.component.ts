@@ -52,6 +52,4 @@ export class StudentsListComponent implements OnInit {
     this.router.navigate([this.router.url, 'profile', id]);
   }
 
-
-  
 }
